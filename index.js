@@ -5,7 +5,7 @@ const textEditor = document.querySelector("#textEditor")
 let isCtrlPressed = 0
 
 let Tree
-await import("./modules/Tree").then(
+await import("https://github.com/QKekos/make_it_scheme/blob/main/modules/Tree.js").then(
     (module) => {
         debugger
         console.log(module)
