@@ -4,6 +4,8 @@ const textEditor = document.querySelector("#textEditor")
 
 let isCtrlPressed = 0
 
+import { Tree } from "./modules/Tree"
+
 function updateEditor() {
     lineNumbers.innerHTML =""
 
