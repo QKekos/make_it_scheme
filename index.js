@@ -5,9 +5,10 @@ const textEditor = document.querySelector("#textEditor")
 let isCtrlPressed = 0
 
 let Tree
-import("./modules/Tree").then(
+await import("./modules/Tree").then(
     (module) => {
         debugger
+        console.log(module)
         Tree = module.Tree
     }
 )
