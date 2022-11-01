@@ -2,16 +2,10 @@ const mainArea = document.querySelector("#mainArea")
 const lineNumbers = document.querySelector("#lineNumbers")
 const textEditor = document.querySelector("#textEditor")
 
-let isCtrlPressed = 0
+import { Tree } from "./modules/Tree.js";
+import { mappings } from "./modules/mappings.js";
 
-let Tree
-await import("https://github.com/QKekos/make_it_scheme/blob/main/modules/Tree.js").then(
-    (module) => {
-        debugger
-        console.log(module)
-        Tree = module.Tree
-    }
-)
+let isCtrlPressed = 0
 
 function updateEditor() {
     lineNumbers.innerHTML =""
