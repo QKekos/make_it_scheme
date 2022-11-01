@@ -2,8 +2,8 @@ const mainArea = document.querySelector("#mainArea")
 const lineNumbers = document.querySelector("#lineNumbers")
 const textEditor = document.querySelector("#textEditor")
 
-import { Tree } from "./modules/Tree.js";
-import { mappings } from "./modules/mappings.js";
+import { Tree } from "./modules/Tree";
+import { mappings } from "./modules/mappings";
 
 let isCtrlPressed = 0
 
